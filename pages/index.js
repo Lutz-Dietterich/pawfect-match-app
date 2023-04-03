@@ -1,6 +1,7 @@
 import CardList from "../components/CardList";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 
 export default function Home() {
   const router = useRouter();
@@ -24,6 +25,7 @@ export default function Home() {
   return (
     <>
       <CardList />
+      <ScrollToTopButton />
     </>
   );
 }
